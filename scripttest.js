@@ -14,7 +14,7 @@ const Userpicked = (option) =>{
     scorearea.style.display = "flex";
 
     if(option == 'scissors'){
-        document.getElementById("UserPick").src = "images/images/scissor.png";
+        document.getElementById("UserPick").src = "images/scissor.png";
         var color = document.getElementById("choice1");
         color.style.border = "12px solid rgb(191, 63, 255)"
     }
@@ -24,7 +24,7 @@ const Userpicked = (option) =>{
         color.style.border = "12px solid rgb(0, 136, 255)"
     }
     else if(option == 'paper'){
-        document.getElementById("UserPick").src = "images/images/paper.png";
+        document.getElementById("UserPick").src = "images/paper.png";
         var color = document.getElementById("choice1");
         color.style.border = "12px solid rgb(255, 164, 36)"
     }
@@ -39,7 +39,7 @@ const Pcpicked = () =>{
     let pcpick = op[Math.floor(Math.random()*op.length)];
     
     if(pcpick == 'scissors'){
-        document.getElementById("OptnPick").src = "images/images/scissor.png";
+        document.getElementById("OptnPick").src = "images/scissor.png";
         var color = document.getElementById("choice2");
         color.style.border = "12px solid rgb(191, 63, 255)"
     }
@@ -49,7 +49,7 @@ const Pcpicked = () =>{
         color.style.border = "12px solid rgb(0, 136, 255)"
     }
     else if(pcpick == 'paper'){
-        document.getElementById("OptnPick").src = "images/images/paper.png";
+        document.getElementById("OptnPick").src = "images/paper.png";
         var color = document.getElementById("choice2");
         color.style.border = "12px solid rgb(255, 164, 36)"
     }
