@@ -14,17 +14,17 @@ const Userpicked = (option) =>{
     scorearea.style.display = "flex";
 
     if(option == 'scissors'){
-        document.getElementById("UserPick").src = "scissor.png";
+        document.getElementById("UserPick").src = "images/images/scissor.png";
         var color = document.getElementById("choice1");
         color.style.border = "12px solid rgb(191, 63, 255)"
     }
     else if(option == 'rock'){
-        document.getElementById("UserPick").src = "rock.png";
+        document.getElementById("UserPick").src = "images/rock.png";
         var color = document.getElementById("choice1");
         color.style.border = "12px solid rgb(0, 136, 255)"
     }
     else if(option == 'paper'){
-        document.getElementById("UserPick").src = "paper.png";
+        document.getElementById("UserPick").src = "images/images/paper.png";
         var color = document.getElementById("choice1");
         color.style.border = "12px solid rgb(255, 164, 36)"
     }
@@ -39,17 +39,17 @@ const Pcpicked = () =>{
     let pcpick = op[Math.floor(Math.random()*op.length)];
     
     if(pcpick == 'scissors'){
-        document.getElementById("OptnPick").src = "scissor.png";
+        document.getElementById("OptnPick").src = "images/images/scissor.png";
         var color = document.getElementById("choice2");
         color.style.border = "12px solid rgb(191, 63, 255)"
     }
     else if(pcpick == 'rock'){
-        document.getElementById("OptnPick").src = "rock.png";
+        document.getElementById("OptnPick").src = "images/rock.png";
         var color = document.getElementById("choice2");
         color.style.border = "12px solid rgb(0, 136, 255)"
     }
     else if(pcpick == 'paper'){
-        document.getElementById("OptnPick").src = "paper.png";
+        document.getElementById("OptnPick").src = "images/images/paper.png";
         var color = document.getElementById("choice2");
         color.style.border = "12px solid rgb(255, 164, 36)"
     }
