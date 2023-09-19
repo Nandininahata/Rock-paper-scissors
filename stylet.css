@@ -215,7 +215,7 @@ body{
 }
 .rule-page{
     position: absolute;
-    top:30%;
+    top:35%;
     right: 30%;
     z-index: 2;
     transform: scale(0);
@@ -244,7 +244,7 @@ body{
 .next-page-btn{
     outline: 0;
     position: absolute;
-    right: 6%;
+    right: 10%;
     bottom: 6%;
     color: white;
     background: transparent;
