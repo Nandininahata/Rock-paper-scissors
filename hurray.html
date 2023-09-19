@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hurray page</title>
+    
+    <link rel="stylesheet" type="text/css" href="styletest1.css">
+</head>
+<body>
+        <div class="container">
+            <div class="winner-image">
+                <div class="stars">
+                    <img  src="stars.png" alt="stars">
+                </div>
+                <div class="trophy">
+                <img src="trophy.png" alt="trophy">
+                </div>
+            </div>
+            <h1>HURRAY!!</h1>
+            <h2>YOU WON THE GAME</h2>
+            <div class="play-again" onclick="playAgain()">PLAY AGAIN</div>
+        </div>
+    <script>
+        function playAgain() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

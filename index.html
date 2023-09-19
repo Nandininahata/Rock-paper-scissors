@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper and Scissors game</title>
+    <link rel="stylesheet" href="stylet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+    <script src="scripttest.js"></script>
+    <a href="hurray.html"></a>
+</head>
+<body>
+    <div class="container" id="disp">
+        <div class="header">
+            <div class="title">
+                <p>ROCK</p>
+                <p>PAPER</p>
+                <p>SCISSORS</p>
+            </div>
+            <div class="scores">
+                <div class="com_score">
+                    <p style="font-size: 18px; font-weight: 800; color: rgb(95, 95, 95);">COMPUTER<br> &nbsp;&nbsp;&nbsp;&nbsp; SCORE</p>
+                    <h2 id="c_score" style="font-size: 70px; font-weight: 1100;">0</h2>
+                </div>
+                <div class="user_score">
+                    <p style="font-size: 18px; font-weight: 800; color: rgb(95, 95, 95);">&nbsp;YOUR<br>SCORE</p>
+                    <h2 id="u_score" style="font-size: 70px; font-weight: 900;">0</h2>
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="opt rock" onclick="Userpicked('rock')">
+                <img src="rock.png" alt="rock" class="src" style="height: 70px; width: 80px;">
+            </div>
+            <div class="opt scissors" onclick="Userpicked('scissors')">
+                <img src="scissor.png" alt="scissor" class="src" style="height: 70px; width: 60px;">
+            </div>
+            <div class="opt paper" onclick="Userpicked('paper')">
+                <img src="paper.png" alt="paper" class="src" style="height: 75px; width: 70px;">
+            </div>
+        </div>
+        <div class="score-area">
+            <div class="user-choice">
+                <h1>USER PICKED</h1>
+                <div class="picked-choice">
+                    <div class="opt rock" id="choice1">
+                        <img src="rock.png" id="UserPick" alt="rock" class="src" style="height: 70px; width: 80px;">
+                    </div>
+                </div>
+            </div>
+            <div class="ref">
+                <div class="outcome">
+                    <h1 style="font-size: 35px;margin-top: 40px; margin-bottom: -2px; letter-spacing: 5px;">YOU WIN</h1>
+                    <h1 style="font-size: 22px;">AGAINST PC</h1>
+                    <div class="play-again" onclick="restart()">PLAY AGAIN</div>
+                </div>
+            </div>
+            <div class="pc-choice">
+                <h1>PC PICKED</h1>
+                <div class="picked-choice">
+                    <div class="opt rock" id="choice2">
+                        <img src="rock.png" id="OptnPick" alt="rock" class="src" style="height: 70px; width: 80px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rule-page" style="width: 5.76px; height: 32px;">
+            <div class="close-btn" onClick="togglePage()">&times;</div>
+            <div class="rules">
+                <h1 style="font-size: 40px;">Game Rules</h1>
+                <ul class="rules-list" style="padding: px;">
+                    <li style="margin-top: 10px;"><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li>
+                    <li style="margin-top: 10px;"><span>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</span></li>
+                    <li style="margin-top: 10px;"><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</span></li>
+                    <li style="margin-top: 10px;"><span>If both players lay down the same hand, each player lays down another hand</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rule-btn">
+            <button class="rules-btn" onClick="togglePage()">RULES</button>
+        </div>
+
+        <div class="next-btn">
+            <button id="nextClickBtn" class="next-page-btn" style="display: none;" onclick="toWinnerPage()">NEXT</button>
+        </div>
+    </div>    
+</body>
+</html>
